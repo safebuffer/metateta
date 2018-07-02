@@ -88,7 +88,7 @@ def target_list(hostsfile,protocol,rhosts,rhost,lhost,lport,payload,scannerlist,
 	ff = open(hostsfile,'r')
 	for target in ff:
 		target = target.rstrip()
-		set_targets(rhosts,rhost,lhost,lport,payload,togo,user,password)
+		set_targets(target,target,lhost,lport,payload,togo,user,password)
 	return True
 
   
